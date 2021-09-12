@@ -10,4 +10,9 @@
 ⬛ Make the navbar responsive<br />
 ⬛ Improve the title and paragraph design<br />
 ⬛ Create a nice logo<br />
+⬛ Fill the website content<br />
 <br />
+
+## ❤️ Infos & Credits :
+Project created for a SAE
+Website made by ❤️ in France 
