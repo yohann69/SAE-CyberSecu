@@ -6,12 +6,14 @@
 
 ## 📜 To do:
 ⬛ Configure the permanent scroll button<br />
-⬛ Create a nice design for the footer<br />
-⬛ Make the navbar responsive<br />
+⬛ Make the website responsive<br />
 ⬛ Improve the title and paragraph design<br />
 ⬛ Create a nice logo<br />
 ⬛ Fill the website content<br />
 <br />
+
+## ✔️ Done:
+✅ Create a nice design for the footer<br />
 
 ## ❤️ Infos & Credits :
 Project created for a SAE<br/>
