@@ -14,5 +14,5 @@
 <br />
 
 ## ❤️ Infos & Credits :
-Project created for a SAE
-Website made by ❤️ in France 
+Project created for a SAE<br/>
+Website made by ❤️ in France <br/>
