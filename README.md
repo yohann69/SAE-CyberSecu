@@ -10,6 +10,9 @@
 ⬛ Improve the title and paragraph design<br />
 ⬛ Create a nice logo<br />
 ⬛ Fill the website content<br />
+⬛ Makea a modal windows for each section<br />
+⬛ Make the section text center left next to a fixed background<br />
+⬛ ...
 <br />
 
 ## ✔️ Done:
