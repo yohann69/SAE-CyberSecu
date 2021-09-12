@@ -1,0 +1,227 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;495;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="pics/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pics/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pics/favicon-16x16.png">
+    <link rel="manifest" href="pics/site.webmanifest">
+
+    <title>CyberSecurity</title>
+
+</head>
+
+<body>
+
+    <header id="navbar">
+        <div class="navbar">
+            <div class="box">
+                <a><img src="pics/logo.svg" alt="Cybersecu Logo" class="logo" href="#"></a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Code">Section 1</a></li>
+                <li><a href="#Code2">Section 2</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <div class="section">
+
+            <div class="secondbg"></div>
+
+            <div class=" intro">
+                <div class="animate__animated animate__fadeInUp">
+                    <h1 class="txtintro">Cyber Sécurité</h1>
+                    <h2 class="txtintro"><span class="txt-rotate" data-period="2000" data-rotate='[ "Antivirus", "VPN", "Database", "White Hat", "Bug Bounty"]'></span></h2>
+                    <script>
+                        var TxtRotate = function(el, toRotate, period) {
+                          this.toRotate = toRotate;
+                          this.el = el;
+                          this.loopNum = 0;
+                          this.period = parseInt(period, 10) || 2000;
+                          this.txt = '';
+                          this.tick();
+                          this.isDeleting = false;
+                        };
+          
+                            TxtRotate.prototype.tick = function() {
+                              var i = this.loopNum % this.toRotate.length;
+                              var fullTxt = this.toRotate[i];
+                          
+                              if (this.isDeleting) {
+                                this.txt = fullTxt.substring(0, this.txt.length - 1);
+                              } else {
+                                this.txt = fullTxt.substring(0, this.txt.length + 1);
+                              }
+                          
+                              this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+                          
+                              var that = this;
+                              var delta = 300 - Math.random() * 100;
+                          
+                              if (this.isDeleting) { delta /= 3; }
+                          
+                              if (!this.isDeleting && this.txt === fullTxt) {
+                                delta = this.period;
+                                this.isDeleting = true;
+                              } else if (this.isDeleting && this.txt === '') {
+                                this.isDeleting = false;
+                                this.loopNum++;
+                                delta = 500;
+                              }
+                          
+                              setTimeout(function() {
+                                that.tick();
+                              }, delta);
+                            };
+          
+                            window.onload = function() {
+                              var elements = document.getElementsByClassName('txt-rotate');
+                              for (var i=0; i<elements.length; i++) {
+                                var toRotate = elements[i].getAttribute('data-rotate');
+                                var period = elements[i].getAttribute('data-period');
+                                if (toRotate) {
+                                  new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                                }
+                              }
+                              // INJECT CSS
+                              var css = document.createElement("style");
+                              css.type = "text/css";
+                              css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+                              document.body.appendChild(css);
+                            };
+                    </script>
+                </div>
+            </div>
+
+            <!--The Scroll Down button-->
+            <a href="#Code" class="animate__animated animate__fadeIn">
+                <div class="scroll">
+                    <div class="scrollanim">
+                        <i " class="bi bi-arrow-down animate__animated animate__fadeInDown "></i>
+            </div>
+        </div>
+        <!------------------------->
+      
+        <div class="centerbottom ">
+          <div class="scrollbox "> </div>
+        </div>
+      </a>
+      </div>
+    
+
+
+
+    <div class="content ">
+      
+      <div id="Code" class="code section ">
+        <h1>H1 title</h1>
+        <h2>H1 title</h2>
+        <h3>H1 title</h3>
+        <h4>H1 title</h4>
+        <h5>H1 title</h5>
+        <h6>H1 title</h6>
+        <p>This is a paragraph with a ling in his <a href="https://www.google.com ">code</a> that send to google.Com</p>
+        <li> Code</li>
+        <a href="#footer" class="btn">Bouton</a>
+        <p> Code</p>
+        <p> Code</p>
+        <p> Code</p>
+        
+        <a href="#Code2" class="btn-rnd"><i class="bi bi-arrow-down scrollanim"></i></a>
+        </div>
+
+        <div id="Code2" class="Code2 section">
+
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <p>Code 2</p>
+            <a href="#footer" class="btn-rnd"><i class="bi bi-arrow-down scrollanim"></i></a>
+        </div>
+
+    </div>
+</body>
+
+<footer id="footer" class="footer section">
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+    <p>copyright</p>
+</footer>
+
+</html>
