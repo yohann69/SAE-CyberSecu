@@ -17,6 +17,11 @@
 
 ## ✔️ Done:
 ✅ Create a nice design for the footer<br />
+✅ Create a mordern navbar<br />
+✅ Create a clean homescreen with annimated scroll down btn<br />
+✅ Create a nice global theme<br />
+✅ ...
+<br />
 
 ## ❤️ Infos & Credits :
 Project created for a SAE<br/>
