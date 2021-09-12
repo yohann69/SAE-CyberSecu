@@ -350,3 +350,42 @@ header{
   }
   
   
+
+
+
+
+
+
+
+
+
+
+/*------------- Footer ------------*/
+
+footer{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    background: url(https://i.imgur.com/FUgLFNt.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer p{
+    color: rgb(112, 112, 112);
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    text-align: center;
+}
+.wave{
+    width: 100%; 
+    margin-top: -50px;
+    z-index: -1;
+}
+.wave{
+    height: 100px;
+}
