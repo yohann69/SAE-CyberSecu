@@ -5,9 +5,9 @@
 
 
 ## 📜 To do:
-⬛ Configure the permanent scroll button
-⬛ Create a nice design for the footer
-⬛ Make the navbar responsive
-⬛ Improve the title and paragraph design
-⬛ Create a nice logo
+⬛ Configure the permanent scroll button<br />
+⬛ Create a nice design for the footer<br />
+⬛ Make the navbar responsive<br />
+⬛ Improve the title and paragraph design<br />
+⬛ Create a nice logo<br />
 <br />
