@@ -2,20 +2,11 @@
 <html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;495;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/grid.css"
-
+    <link rel="stylesheet" href="css.css">
     <link rel="apple-touch-icon" sizes="180x180" href="pics/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="pics/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="pics/favicon-16x16.png">
-    <link rel="manifest" href="pics/site.webmanifest">
 
-    <script src="js.js"></script>
 
     <title>CyberSecurity</title>
 
@@ -23,11 +14,10 @@
 
 <body>
 
-  <div class="overlay"></div>
     <header id="navbar">
         <div class="navbar">
             <div class="box">
-                <a><img src="pics/logo.svg" alt="Cybersecu Logo" class="logo" href="#"></a>
+                <a href="#"><img src="pics/logo.svg" alt="Cybersecu Logo" class="logo"></a>
                 <li><a href="#">Home</a></li>
                 <li><a href="#intro">Intro</a></li>
                 <li><a href="#conditions">Conditions</a></li>
@@ -37,45 +27,64 @@
         </div>
     </header>
 
-    <div>
-        <div>
-
-            <div class="secondbg"></div>
-
-            <div class=" intro">
-                <div class="animate__animated animate__fadeInUp">
-                    <h1 class="txtintro">Cyber Sécurité</h1>
-                    <h2 class="txtintro"><span class="txt-rotate" data-period="2000" data-rotate='[ "Antivirus", "VPN", "Database", "White Hat", "Bug Bounty"]'></span></h2>
-
-                </div>
-            </div>
-
-            <!--The Scroll Down button-->
-            <a href="#intro" class="animate__animated animate__fadeIn">
-                <div class="scroll" id="homescroll">
-                    <div class="scrollanim">
-                        <i " class="bi bi-arrow-down animate__animated animate__fadeInDown homescroll "></i>
-                    </div>
-                </div>
-            <!------------------------->
-      
-                <div class="centerbottom ">
-                  <div class="scrollbox "> </div>
-                </div>
-            </a>
-        </div>
-    
 
 
 
-    
+
+
+
+    <div class="modal hidden">   
+      <button class="close-modal">&times;</button>
+      <h3>Popup Avec du texte</h3>
+      <p>
+        Tous le titre et le texte de la popup vas changer en fonction du boutton  "En savoir +"
+        sur lequel on clique grave à la magie du javascript. <br/>
+        Cette popup a un fond semi transparant et flou ce qui fait un joli effet. Norlament, 
+        toute la v2 de se site est responsive. J'ai pas encore eu le temps (et surtout la 
+        connexion) pour tester tout ça mais j'espère pouvoir le faire au + vite 🤞!
+      </p>
+    </div>
+
     <div id="overlayinto" class="overlayinto hidden"></div>
+    <!--Update the href of the following button when it's clicked so be able to scroll down to the next section-->
+    <a href="#conditions" class="btn-rnd "><i class="bi bi-arrow-down scrollanim "></i></a>
+
     <div class="content ">
+
       
-      <!--Update the href of the following button when it's clicked so be able to scroll down to the next section-->
-      <a href="#conditions" class="btn-rnd "><i class="bi bi-arrow-down scrollanim "></i></a>
-      
-      
+
+
+
+
+      <div class="section titreacc">
+        
+        <div class="secondbg"></div>
+        <div class="intro">
+          <h1>Cybersécurité</h1>
+          <h2 class="txtintro"><span class="txt-rotate" data-period="2000" data-rotate='[ "Antivirus", "VPN", "Database", "White Hat", "Bug Bounty"]'></span></h2>
+        </div>
+
+
+        <!--The Scroll Down button-->
+        <a href="#intro" class="animate__animated animate__fadeIn">
+          <div class="scroll" id="homescroll">
+              <div class="scrollanim">
+                  <i " class="bi bi-arrow-down animate__animated animate__fadeInDown homescroll "></i>
+              </div>
+          </div>
+      <!------------------------->
+
+          <div class="centerbottom ">
+            <div class="scrollbox "> </div>
+          </div>
+      </a>
+      </div>
+
+
+
+
+
+
 
       <div id="intro" class="section secintro">
           <div class="introgb"></div>
@@ -84,7 +93,7 @@
           <p>This is a paragraph with a link in his <a href="https://www.google.com ">code</a> that send to google.Com</p>
           
           <!--Open a modal windows (& remove the hidden class of overlayintro) with more text (and a close button)-->
-          <a class="introbtn btn" id="introbtn">En savoir +</a>
+          <a class="introbtn btn">En savoir +</a>
       </div>
 
       <div id="conditions" class="section ">
@@ -93,6 +102,8 @@
         <p>Code 2</p>
         <p>Code 2</p>
         <p>Code 2</p>
+        <!--Open a modal windows (& remove the hidden class of overlayintro) with more text (and a close button)-->
+        <a class="conbtn btn">En savoir +</a>
       </div>
       
       <div id="strategies" class="section ">
@@ -101,6 +112,8 @@
         <p>Code 2</p>
         <p>Code 2</p>
         <p>Code 2</p>
+        <!--Open a modal windows (& remove the hidden class of overlayintro) with more text (and a close button)-->
+        <a class="stratbtn btn">En savoir +</a>
       </div>
 
       <div id="ccl" class="section ">
@@ -109,14 +122,23 @@
         <p>Code 2</p>
         <p>Code 2</p>
         <p>Code 2</p>
+        <!--Open a modal windows (& remove the hidden class of overlayintro) with more text (and a close button)-->
+        <a class="cclbtn btn">En savoir +</a>
       </div>
 
     </div>
+
+
+
+
+
+
+    <script src="js.js"></script>
 </body>
+
 
 <footer id="footer" class="footer ">
   <br/><br/><br/><br/><br/>
-  <p> Copyright &copy; 2021 by IUT VALENCE - No rights reserved.<br>v0.2  [<a href="https://github.com/yohann69/SAE-CyberSecu ">Souce code</a>]</p><br/>
+  <p> Copyright &copy; 2021 by IUT VALENCE - No rights reserved.<br>v0.5  [<a href="https://github.com/yohann69/SAE-CyberSecu ">Souce code</a>]</p><br/>
 </footer>
-
 </html>

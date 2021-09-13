@@ -1,6 +1,68 @@
-"use strict";
+'use strict'
 
-// Text Spinner
+
+const introbon = document.querySelector('.introbtn');
+const overlayinto = document.querySelector('.overlayinto');
+const modal = document.querySelector('.modal');
+const closemodal = document.querySelector('.close-modal');
+
+
+
+const openmodal = function(){
+    overlayinto.classList.remove('hidden');
+    modal.classList.remove('hidden')
+}
+const closeModal = function(){
+    overlayinto.classList.add('hidden')
+    modal.classList.add('hidden')
+}
+
+
+closemodal.addEventListener('click', closeModal)
+overlayinto.addEventListener('click', closeModal)
+introbon.addEventListener('click', openmodal)
+
+
+document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && !modal.classList.contains('hidden')){
+        closeModal();
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////// Text Spinner ////////////////////
 var TxtRotate = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -62,21 +124,3 @@ window.onload = function () {
 /////////////////////////////////////////////////
 
 
-
-
-
-
-
-
-
-
-
-const introbtn = document.querySelector('.introbtn');
-const overlayintro = document.querySelector('.overlayinto');
-
-
-const intromodal = function(){
-  overlayintro.classList.remove('.hidden')
-}
-
-introbtn.addEventListener('click', intromodal)
