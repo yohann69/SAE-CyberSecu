@@ -10,8 +10,8 @@
 ⬛ Improve the title and paragraph design<br />
 ⬛ Create a nice logo<br />
 ⬛ Fill the website content<br />
-⬛ Makea a modal windows for each section<br />
 ⬛ Make the section text center left next to a fixed background<br />
+⬛ Configure the buttons to change the text in the modal windows<br />
 ⬛ ...
 <br />
 
@@ -20,9 +20,11 @@
 ✅ Create a mordern navbar<br />
 ✅ Create a clean homescreen with annimated scroll down btn<br />
 ✅ Create a nice global theme<br />
+✅ Make a modal windows for each section<br />
 ✅ ...
 <br />
 
 ## ❤️ Infos & Credits :
 Project created for a SAE<br/>
 Website made by ❤️ in France <br/>
+Hosted thanks to cloudflare pages
