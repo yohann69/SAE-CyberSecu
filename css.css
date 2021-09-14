@@ -118,11 +118,13 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    width: 55%;
     max-width: 1000px;
     backdrop-filter: blur(40px);
     background-color: rgba(240, 255, 241, 0.055);
     padding: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     border-radius: 20px;
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 100;
@@ -141,7 +143,7 @@ button {
 
 .close-modal:hover,
 .close-modal:active{
-    color: rgb(79, 168, 38);;
+    color: #00ef14;
 }
 
 .modal h3{
@@ -163,6 +165,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
 }
 .intro h1{
     margin-bottom: 10px;
@@ -266,14 +269,21 @@ footer {
 
 
 
+.titreacc{
+    z-index: 50;
+}
 
 
 
 
 
 
-
-
+.introindicator{
+    left: 50%;
+    color: #ffffff4f;
+    position: absolute;
+    bottom: 0.5rem;
+}
 
 
 
@@ -284,6 +294,15 @@ footer {
     color: #00ef14;
 }
 
+.thirdbg{
+    background-color: #1b1b1b;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
 .secondbg {
     background-color: #122010;
     width: 50%;
@@ -292,7 +311,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -5;
+    z-index: 1;
 }
 
 .scroll {
@@ -303,7 +322,7 @@ footer {
     transform: translateX(-50%);
     text-align: center;
     color: rgba(255, 255, 255, 0.671);
-    z-index: 3;
+    z-index: 5;
 }
 
 .scrollanim {
@@ -360,6 +379,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    z-index: 3;
 }
 .scrollbox {
     width: 50px;
@@ -387,6 +407,36 @@ footer {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-
+    z-index: 0;
     bottom: 5%;
+}
+
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 200%;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+    color: rgb(88, 88, 88);
+}
+  
+.next {
+    right: 3%;
+}
+.prev{
+    left: 3%;
+}
+.next:hover,
+.next:active,
+.prev:active,
+.prev:hover{
+   color:  #00ef14;
+   text-decoration: none;
+   
+   border-bottom: 0px solid ;
 }

@@ -3,24 +3,71 @@
 
 const introbon = document.querySelector('.introbtn');
 const overlayinto = document.querySelector('.overlayinto');
-const modal = document.querySelector('.modal');
+const modalintro = document.querySelector('.modalintro');
 const closemodal = document.querySelector('.close-modal');
+const introprev = document.querySelector('.introprev');
+const intronext = document.querySelector('.intronext');
+const introtxt = document.querySelector('.introtxt');
+const introtitle = document.querySelector('.introtitle');
+const introindicator = document.querySelector('.introindicator');
 
+
+
+let intronb = 0;
 
 
 const openmodal = function(){
     overlayinto.classList.remove('hidden');
-    modal.classList.remove('hidden')
+    modalintro.classList.remove('hidden')
 }
 const closeModal = function(){
     overlayinto.classList.add('hidden')
-    modal.classList.add('hidden')
+    modalintro.classList.add('hidden')
 }
+
+intronext.addEventListener('click', function(){
+    if (intronb === 0){
+        introtitle.innerHTML = "Nouveau Titre";
+        introtxt.innerHTML = "Ceci est un nouveau paragraphe super long <br/> yesxy ";
+        introindicator.innerHTML = "2/3";
+        intronb = 1;
+    }else if (intronb === 1){
+        introtitle.innerHTML = "Titre 3";
+        introtxt.innerHTML = "ffze <br/>oi <br/>oiu <br/>oih <br/>hoihoçihjoi <br/> bfdbfdbd<br/>sqgedzsg <br/>64486 <br/>47 <br/>87 <br/>74v <br/>5 <br/> <br/>0896 <br/>08 <br/> <br/>54";
+        introindicator.innerHTML = "3/3";
+        intronb = 2;
+    }
+})
+
+
+introprev.addEventListener('click', function(){
+    if (intronb === 0){
+        console.log('🔪');
+    }else if (intronb === 1){
+        introtitle.innerHTML = "Popup Avec dudfsfstexte";
+        introtxt.innerHTML = "Tous le titre et le texte de la popup vas changer en fonction du boutton  \"En savoir +\" sur lequel on clique grave à la magie du javascript. <br/>   Cette popup a un fond semi transparant et flou ce qui fait un joli effet. Norlament, toute la v2 de se site est responsive. J'ai pas encore eu le temps (et surtout la connexion) pour tester tout ça mais j'espère pouvoir le faire au + vite 🤞!";
+        
+        introindicator.innerHTML = "1/3";
+        intronb = 0;
+    }else if (intronb === 2){
+        introtitle.innerHTML = "Nouveau Titre";
+        introtxt.innerHTML = "Ceci est un nouveau paragraphe super long <br/> yesxy ";
+        introindicator.innerHTML = "2/3";
+        intronb = 1;
+    }
+    
+})
 
 
 closemodal.addEventListener('click', closeModal)
 overlayinto.addEventListener('click', closeModal)
 introbon.addEventListener('click', openmodal)
+
+
+
+
+
+console.log(document.addEventListener('keydown'))
 
 
 document.addEventListener('keydown', function(e){
