@@ -67,7 +67,6 @@ introbon.addEventListener('click', openmodal)
 
 
 
-console.log(document.addEventListener('keydown'))
 
 
 document.addEventListener('keydown', function(e){

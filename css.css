@@ -158,6 +158,7 @@ button {
     margin-top: 10px;
     text-align: center;
     color: #00ef14;
+    z-index: 2;
 }
 
 .intro{
