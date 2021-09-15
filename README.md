@@ -5,15 +5,13 @@
 
 
 ## 📜 To do:
-🔁 Working On It - Configure the permanent scroll button<br />
-⏳  Partially done -  Configure the fixed scroll button<br />
+⏳  Half done -  Configure the fixed scroll button<br />
+⚒️  Working on it -   Make the section text center left next to a fixed background<br />
+🏁 Started - Fill the website content<br />
 ⬛ Make the website responsive<br />
 ⬛ Create a nice logo<br />
-⬛ Fill the website content<br />
 ⬛ Create the remainging modal windows for the other sections<br />
 ⬛ Correct all language errors<br />
-⬛ Fill the website content<br />
-⬛ Make the section text center left next to a fixed background<br />
 ⬛ ...
 <br />
 
