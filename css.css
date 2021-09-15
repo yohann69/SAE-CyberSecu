@@ -47,10 +47,12 @@ h1 {
     text-align: center;
 }
 h2 {
-    font-size: 300%;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 0;
 }
 h3 {
-    font-size: 200%;
+    font-size: 180%;
 }
 h4 {
     font-size: 150%;
@@ -67,7 +69,17 @@ a:active {
     transition: border-bottom 0.2s;
 }
 
-
+.intropic{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 40%;
+    
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
 
 button {
     border-radius: 20px;
@@ -305,7 +317,7 @@ footer {
     z-index: 1;
 }
 .secondbg {
-    background-color: #122010;
+    background-color: #182b16;
     width: 50%;
     position: absolute;
     top: 0;
@@ -390,8 +402,6 @@ footer {
     transform: rotate(45deg);
 }
 
-
-
 .scrollanim {
     -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
     -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
@@ -410,6 +420,8 @@ footer {
     transform: translateX(-50%);
     z-index: 0;
     bottom: 5%;
+    backdrop-filter: blur(10px);
+    background-color: #182b164d;
 }
 
 
@@ -440,4 +452,14 @@ footer {
    text-decoration: none;
    
    border-bottom: 0px solid ;
+}
+
+
+
+
+
+.rightcenter{
+    width: 50%;
+    margin-left: 50%;
+    align-content: center;
 }

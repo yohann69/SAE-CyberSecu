@@ -10,30 +10,81 @@ const intronext = document.querySelector('.intronext');
 const introtxt = document.querySelector('.introtxt');
 const introtitle = document.querySelector('.introtitle');
 const introindicator = document.querySelector('.introindicator');
-
-
+const modalconditions = document.querySelector('.modalconditions');
+const modalstrat = document.querySelector('.modalstrat');
+const modalccl = document.querySelector('.modalccl');
+const conbtn = document.querySelector('.conbtn');
+const stratbtn = document.querySelector('.stratbtn');
+const cclbtn = document.querySelector('.cclbtn');
+const btnrnd = document.querySelector('.btn-rnd');
+const arrowscroll = document.querySelector('.arrowscroll');
 
 let intronb = 0;
-
+let scrollbtn = 0;
 
 const openmodal = function(){
     overlayinto.classList.remove('hidden');
     modalintro.classList.remove('hidden')
 }
+
+
+
+document.querySelector('.scroll').addEventListener('click', function(){
+    btnrnd.href="#conditions";
+    arrowscroll.classList.add('bi-arrow-down');
+    arrowscroll.classList.remove('bi-arrow-up');
+})
+
+const openmodalconditions = function(){
+    overlayinto.classList.remove('hidden');
+    modalconditions.classList.remove('hidden')
+}
+const openmodalstrat = function(){
+    overlayinto.classList.remove('hidden');
+    modalstrat.classList.remove('hidden')
+}
+const openmodalccl = function(){
+    overlayinto.classList.remove('hidden');
+    modalccl.classList.remove('hidden')
+}
+btnrnd.addEventListener('click', function(){
+    if(scrollbtn === 0){
+        scrollbtn = 1;
+        btnrnd.href="#conditions";
+    }else if (scrollbtn===1){
+        btnrnd.href="#strategies";
+        scrollbtn = 2;
+    }else if (scrollbtn===2){
+        btnrnd.href="#ccl";
+        scrollbtn = 50;
+        arrowscroll.classList.remove('bi-arrow-down');
+        arrowscroll.classList.add('bi-arrow-up');
+    }else if (scrollbtn===50){
+        btnrnd.href="#";
+        scrollbtn = 0;
+        arrowscroll.classList.add('bi-arrow-down');
+        arrowscroll.classList.remove('bi-arrow-up');
+    }
+})
+
+
 const closeModal = function(){
     overlayinto.classList.add('hidden')
     modalintro.classList.add('hidden')
+    modalconditions.classList.add('hidden')
+    modalstrat.classList.add('hidden')
+    modalccl.classList.add('hidden')
 }
 
 intronext.addEventListener('click', function(){
     if (intronb === 0){
-        introtitle.innerHTML = "Nouveau Titre";
+        introtitle.innerHTML = "Problématique";
         introtxt.innerHTML = "Ceci est un nouveau paragraphe super long <br/> yesxy ";
         introindicator.innerHTML = "2/3";
         intronb = 1;
     }else if (intronb === 1){
-        introtitle.innerHTML = "Titre 3";
-        introtxt.innerHTML = "ffze <br/>oi <br/>oiu <br/>oih <br/>hoihoçihjoi <br/> bfdbfdbd<br/>sqgedzsg <br/>64486 <br/>47 <br/>87 <br/>74v <br/>5 <br/> <br/>0896 <br/>08 <br/> <br/>54";
+        introtitle.innerHTML = "Annonce du plan";
+        introtxt.innerHTML = "1. ieiuheiuz<br/>2. hfoqisuhfoezq <br/>3. ffzafzafz <br/>4. oih <br/>4. hoihoçihjoi <br/>5. bfdbfdbd<br/>6. sqgedzsg <br/>7. 64486 <br/>8. 47 <br/>9. 87 <br/>10. 74v <br/>11. 5 <br/>12. eg <br/>13. 0896 <br/>14. 08 <br/>15. fezf6z4fza6 <br/>16. 54";
         introindicator.innerHTML = "3/3";
         intronb = 2;
     }
@@ -44,13 +95,13 @@ introprev.addEventListener('click', function(){
     if (intronb === 0){
         console.log('🔪');
     }else if (intronb === 1){
-        introtitle.innerHTML = "Popup Avec dudfsfstexte";
-        introtxt.innerHTML = "Tous le titre et le texte de la popup vas changer en fonction du boutton  \"En savoir +\" sur lequel on clique grave à la magie du javascript. <br/>   Cette popup a un fond semi transparant et flou ce qui fait un joli effet. Norlament, toute la v2 de se site est responsive. J'ai pas encore eu le temps (et surtout la connexion) pour tester tout ça mais j'espère pouvoir le faire au + vite 🤞!";
+        introtitle.innerHTML = "Définition de l’industrie";
+        introtxt.innerHTML = "Definition: blablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bbla<br/>blablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bblablablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bbla<br/>blablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bbla";
         
         introindicator.innerHTML = "1/3";
         intronb = 0;
     }else if (intronb === 2){
-        introtitle.innerHTML = "Nouveau Titre";
+        introtitle.innerHTML = "Problématique";
         introtxt.innerHTML = "Ceci est un nouveau paragraphe super long <br/> yesxy ";
         introindicator.innerHTML = "2/3";
         intronb = 1;
@@ -62,9 +113,9 @@ introprev.addEventListener('click', function(){
 closemodal.addEventListener('click', closeModal)
 overlayinto.addEventListener('click', closeModal)
 introbon.addEventListener('click', openmodal)
-
-
-
+conbtn.addEventListener('click', openmodalconditions)
+stratbtn.addEventListener('click', openmodalstrat)
+cclbtn.addEventListener('click', openmodalccl)
 
 
 

@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;495;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-
+    
     <title>CyberSecurity</title>
 
 </head>
@@ -40,6 +40,20 @@
 
     <div class="modal hidden modalintro">   
       <button class="close-modal">&times;</button>
+      <h3 class="introtitle">Définition de l’industrie</h3>
+      <p class="introtxt">
+        Definition: blablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bbla<br/>
+        blablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bblablablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bbla<br/>
+        blablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bbla
+      </p>
+      <p class="introindicator">1/3</p>
+      
+      <a class="prev introprev">&#10094;</a>
+      <a class="next intronext">&#10095;</a>
+    </div>
+
+    <div class="modal hidden modalconditions">   
+      <button class="close-modal">&times;</button>
       <h3 class="introtitle">Popup Avec dudfsfstexte</h3>
       <p class="introtxt">
         Tous le titre et le texte de la popup vas changer en fonction du boutton  "En savoir +"
@@ -50,13 +64,47 @@
       </p>
       <p class="introindicator">1/3</p>
       
-      <a class="prev introprev">&#10094;</a>
-      <a class="next intronext">&#10095;</a>
+      <a class="prev conditionsprev">&#10094;</a>
+      <a class="next conditionsnext">&#10095;</a>
     </div>
+
+    <div class="modal hidden modalstrat">   
+      <button class="close-modal">&times;</button>
+      <h3 class="introtitle">Popup Avec dudfsfstexte</h3>
+      <p class="introtxt">
+        Tous le titre et le texte de la popup vas changer en fonction du boutton  "En savoir +"
+        sur lequel on clique grave à la magie du javascript. <br/>
+        Cette popup a un fond semi transparant et flou ce qui fait un joli effet. Norlament, 
+        toute la v2 de se site est responsive. J'ai pas encore eu le temps (et surtout la 
+        connexion) pour tester tout ça mais j'espère pouvoir le faire au + vite 🤞!
+      </p>
+      <p class="introindicator">1/3</p>
+      
+      <a class="prev stratprev">&#10094;</a>
+      <a class="next stratnext">&#10095;</a>
+    </div>
+
+    <div class="modal hidden modalccl">   
+      <button class="close-modal">&times;</button>
+      <h3 class="introtitle">Popup Avec dudfsfstexte</h3>
+      <p class="introtxt">
+        Tous le titre et le texte de la popup vas changer en fonction du boutton  "En savoir +"
+        sur lequel on clique grave à la magie du javascript. <br/>
+        Cette popup a un fond semi transparant et flou ce qui fait un joli effet. Norlament, 
+        toute la v2 de se site est responsive. J'ai pas encore eu le temps (et surtout la 
+        connexion) pour tester tout ça mais j'espère pouvoir le faire au + vite 🤞!
+      </p>
+      <p class="introindicator">1/3</p>
+      
+      <a class="prev cclprev">&#10094;</a>
+      <a class="next cclnext">&#10095;</a>
+    </div>
+    
+
 
     <div id="overlayinto" class="overlayinto hidden"></div>
     <!--Update the href of the following button when it's clicked so be able to scroll down to the next section-->
-    <a href="#conditions" class="btn-rnd "><i class="bi bi-arrow-down scrollanim "></i></a>
+    <a href="#conditions" class="btn-rnd"><i class="arrowscroll bi bi-arrow-down scrollanim "></i></a>
 
     <div class="content ">
 
@@ -98,26 +146,34 @@
 
       <div id="intro" class="section secintro">
           <div class="introgb"></div>
-          <h3><i class="bi bi-shield-lock "></i> Introduction</h3>
-          <br/>
-          <p>This is a paragraph with a link in his <a href="https://www.google.com ">code</a> that send to google.Com</p>
+          <h2><i class="bi bi-shield-lock "></i> Introduction</h2>
           
-          <!--Open a modal windows (& remove the hidden class of overlayintro) with more text (and a close button)-->
-          <a class="introbtn btn">En savoir +</a>
+          <img src="pics/IntroPic.svg" class="intropic">
+
+          <div class="rightcenter">
+            <p>This is a paragraph with a link in his <a href="https://www.google.com ">code</a> that send to google.Com</p>
+          
+            <!--Open a modal windows (& remove the hidden class of overlayintro) with more text (and a close button)-->
+            <a class="introbtn btn">En savoir +</a>
+          </div>
       </div>
 
       <div id="conditions" class="section ">
-        <h3><i class="bi bi-building "></i> Conditions de base et structures</h3>
-        <p>Code 2</p>
-        <p>Code 2</p>
-        <p>Code 2</p>
-        <p>Code 2</p>
-        <!--Open a modal windows (& remove the hidden class of overlayintro) with more text (and a close button)-->
+        <h2><i class="bi bi-building "></i> Conditions de base et structures</h2>
+        <h3>Les conditions de base</h3>
+        <a class="conbtn btn">En savoir +</a>
+        <h3>Les caractéristiques de l’offre </h3>
+        <a class="conbtn btn">En savoir +</a>
+        <h3>Les caractéristiques de la demande</h3>
+        <a class="conbtn btn">En savoir +</a>
+        <h3>Les externalités </h3>
+        <a class="conbtn btn">En savoir +</a>
+        <h3>Tableaux (et graphiques) synthétiques et comparatifs des entreprises sur les conditions de bases</h3>
         <a class="conbtn btn">En savoir +</a>
       </div>
       
       <div id="strategies" class="section ">
-        <h3><i class="bi bi-graph-up "></i> Les stratégies et les performances</h3>
+        <h2><i class="bi bi-graph-up "></i> Les stratégies et les performances</h2>
         <p>Code 2</p>
         <p>Code 2</p>
         <p>Code 2</p>
@@ -127,7 +183,7 @@
       </div>
 
       <div id="ccl" class="section ">
-        <h3><i class="bi bi-bullseye"></i> Conclusion</h3>
+        <h2><i class="bi bi-bullseye"></i> Conclusion</h2>
         <p>Code 2</p>
         <p>Code 2</p>
         <p>Code 2</p>
