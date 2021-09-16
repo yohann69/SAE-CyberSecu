@@ -6,12 +6,13 @@
 
 ## 📜 To do:
 ⏳  Half done -  Configure the fixed scroll button<br />
-⚒️  Working on it -   Make the section text center left next to a fixed background<br />
 🏁 Started - Fill the website content<br />
-⬛ Make the website responsive<br />
+🏁 Started - Make the website responsive<br />
+🏁 Started - Create the remainging modal windows for the other sections<br />
+⬛ Make the navbat responsive<br />
 ⬛ Create a nice logo<br />
-⬛ Create the remainging modal windows for the other sections<br />
 ⬛ Correct all language errors<br />
+⬛ Fix the bug when the home scroll down button isn"t displayed<br />
 ⬛ ...
 <br />
 
@@ -23,6 +24,7 @@
 ✅ Make a modal windows for each section<br />
 ✅ Improve the title and paragraph design<br />
 ✅ Configure the buttons to change the text in the modal windows<br />
+✅ Make the section text center left next to a fixed background<br />
 ✅ ...
 <br />
 
