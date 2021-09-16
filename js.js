@@ -14,7 +14,6 @@ const modalconditions = document.querySelector('.modalconditions');
 const modalstrat = document.querySelector('.modalstrat');
 const modalccl = document.querySelector('.modalccl');
 const conbtn = document.querySelector('.conbtn');
-const stratbtn = document.querySelector('.stratbtn');
 const cclbtn = document.querySelector('.cclbtn');
 const btnrnd = document.querySelector('.btn-rnd');
 const arrowscroll = document.querySelector('.arrowscroll');
@@ -28,7 +27,6 @@ const openmodal = function(){
 }
 
 
-
 document.querySelector('.scroll').addEventListener('click', function(){
     btnrnd.href="#conditions";
     arrowscroll.classList.add('bi-arrow-down');
@@ -37,15 +35,11 @@ document.querySelector('.scroll').addEventListener('click', function(){
 
 const openmodalconditions = function(){
     overlayinto.classList.remove('hidden');
-    modalconditions.classList.remove('hidden')
-}
-const openmodalstrat = function(){
-    overlayinto.classList.remove('hidden');
-    modalstrat.classList.remove('hidden')
+    modalconditions.classList.remove('hidden');
 }
 const openmodalccl = function(){
     overlayinto.classList.remove('hidden');
-    modalccl.classList.remove('hidden')
+    modalccl.classList.remove('hidden');
 }
 btnrnd.addEventListener('click', function(){
     if(scrollbtn === 0){
@@ -69,11 +63,12 @@ btnrnd.addEventListener('click', function(){
 
 
 const closeModal = function(){
-    overlayinto.classList.add('hidden')
-    modalintro.classList.add('hidden')
-    modalconditions.classList.add('hidden')
-    modalstrat.classList.add('hidden')
-    modalccl.classList.add('hidden')
+    overlayinto.classList.add('hidden');
+    modalintro.classList.add('hidden');
+    modalconditions.classList.add('hidden');
+    modalstrat.classList.add('hidden');
+    modalccl.classList.add('hidden');
+    document.querySelector('.modalsynthcon').classList.add('hidden');
 }
 
 intronext.addEventListener('click', function(){
@@ -89,6 +84,13 @@ intronext.addEventListener('click', function(){
         intronb = 2;
     }
 })
+
+
+
+for(let i = 0; i < closemodal.length; i++){
+    closemodal[i].addEventListener('click', closeModal)
+}
+
 
 
 introprev.addEventListener('click', function(){
@@ -110,12 +112,19 @@ introprev.addEventListener('click', function(){
 })
 
 
-closemodal.addEventListener('click', closeModal)
-overlayinto.addEventListener('click', closeModal)
-introbon.addEventListener('click', openmodal)
-conbtn.addEventListener('click', openmodalconditions)
-stratbtn.addEventListener('click', openmodalstrat)
-cclbtn.addEventListener('click', openmodalccl)
+document.querySelector('.consynthbtn').addEventListener('click', function(){
+    document.querySelector('.modalsynthcon').classList.remove('hidden');
+    
+    overlayinto.classList.remove('hidden');
+})
+
+
+
+closemodal.addEventListener('click', closeModal);
+overlayinto.addEventListener('click', closeModal);
+introbon.addEventListener('click', openmodal);
+conbtn.addEventListener('click', openmodalconditions);
+cclbtn.addEventListener('click', openmodalccl);
 
 
 
@@ -125,10 +134,6 @@ document.addEventListener('keydown', function(e){
         closeModal();
     }
 })
-
-
-
-
 
 
 

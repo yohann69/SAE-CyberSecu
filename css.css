@@ -55,24 +55,32 @@ h3 {
     font-size: 180%;
 }
 h4 {
-    font-size: 150%;
+    font-size: 120%;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 a {
     color: #00ef14;
     text-decoration: unset;
 }
-
+.center{
+    text-align: center;
+}
 a:hover,
 a:active {
     border-bottom: 2px solid #00ef14;
     transition: border-bottom 0.2s;
 }
+.consynth{
+    width: 80%;
+    border-radius: 8px;
+}
 
 .intropic{
     margin-top: 5%;
     margin-left: 5%;
-    width: 40%;
+    width: 90%;
     
     user-select: none; /* supported by Chrome and Opera */
     -webkit-user-select: none; /* Safari */
@@ -84,7 +92,12 @@ a:active {
 button {
     border-radius: 20px;
 }
-
+table{
+    width: 100%;
+}
+.pr50{
+    width: 50%;
+}
 .btn {
     border: 3px solid #00ef1486;
     border-radius: 200px;
@@ -119,7 +132,7 @@ button {
 
 
 .section{
-    padding-top: 100px;
+    padding-top: 85px;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -256,7 +269,9 @@ button {
 }
 
 
-
+td{
+    margin-left: 10px;
+}
 footer {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -449,13 +464,14 @@ footer {
 .prev:active,
 .prev:hover{
    color:  #00ef14;
-   text-decoration: none;
-   
-   border-bottom: 0px solid ;
 }
 
 
-
+.noborderbtn:active,
+.noborderbtn:hover{
+   border-bottom: 0px solid ;
+   text-decoration: none;
+}
 
 
 .rightcenter{
@@ -463,3 +479,5 @@ footer {
     margin-left: 50%;
     align-content: center;
 }
+
+
