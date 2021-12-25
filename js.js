@@ -1,10 +1,10 @@
 'use strict'
 
 
-const introbon = document.querySelector('.introbtn');
+const niveaudvpt = document.querySelector('.niveaudvpt');
 const overlayinto = document.querySelector('.overlayinto');
 const modalintro = document.querySelector('.modalintro');
-const closemodal = document.querySelector('.close-modal');
+const closemodal = document.querySelectorAll('.close-modal');
 const introprev = document.querySelector('.introprev');
 const intronext = document.querySelector('.intronext');
 const introtxt = document.querySelector('.introtxt');
@@ -17,6 +17,23 @@ const conbtn = document.querySelector('.conbtn');
 const cclbtn = document.querySelector('.cclbtn');
 const btnrnd = document.querySelector('.btn-rnd');
 const arrowscroll = document.querySelector('.arrowscroll');
+
+const btnClose = document.querySelector('.close-modal');
+
+const closeModal2 = function(){
+    overlayinto.classList.add('hidden');
+    modalintro.classList.add('hidden');
+    modalconditions.classList.add('hidden');
+    modalstrat.classList.add('hidden');
+    modalccl.classList.add('hidden');
+    document.querySelector('.modalsynthcon').classList.add('hidden');
+}
+
+console.log(closemodal);
+
+for(let i = 0; i < closemodal.length; i++){
+    closemodal[i].addEventListener('click', closeModal2)
+}
 
 let darkmode = 1;
 
@@ -78,14 +95,9 @@ const closeModal = function(){
 
 intronext.addEventListener('click', function(){
     if (intronb === 0){
-        introtitle.innerHTML = "Problématique";
-        introtxt.innerHTML = "Ceci est un nouveau paragraphe super long <br/> yesxy ";
-        introindicator.innerHTML = "2/3";
-        intronb = 1;
-    }else if (intronb === 1){
-        introtitle.innerHTML = "Annonce du plan";
-        introtxt.innerHTML = "1. ieiuheiuz<br/>2. hfoqisuhfoezq <br/>3. ffzafzafz <br/>4. oih <br/>4. hoihoçihjoi <br/>5. bfdbfdbd<br/>6. sqgedzsg <br/>7. 64486 <br/>8. 47 <br/>9. 87 <br/>10. 74v <br/>11. 5 <br/>12. eg <br/>13. 0896 <br/>14. 08 <br/>15. fezf6z4fza6 <br/>16. 54";
-        introindicator.innerHTML = "3/3";
+        introtitle.innerHTML = "Schéma";
+        introtxt.innerHTML = "<img src=\"pics/niveaudvpt1.jpg\" alt=\"Pic Stats \" class=\"prezpic\">";
+        introindicator.innerHTML = "2/2";
         intronb = 2;
     }
 })
@@ -102,15 +114,15 @@ introprev.addEventListener('click', function(){
     if (intronb === 0){
         console.log('🔪');
     }else if (intronb === 1){
-        introtitle.innerHTML = "Définition de l’industrie";
-        introtxt.innerHTML = "Definition: blablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bbla<br/>blablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bblablablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bbla<br/>blablablalblablabla blabla blabla bla blablablabla blabla blalbla bla lab lab lab lab lba blabl ablbla bl alb alblba blla bbla";
+        introtitle.innerHTML = "Le niveau de développement de l’économie";
+        introtxt.innerHTML = "Le domaine de la cybersécurité est un domaine en plein essor qui grandit de plus en plus de chaque année. En 2020, les attaques informatiques ont augmenté de 250% sur la planète. Tous les secteurs, tous les pays sont touchés.<br/><br/>En 2020, le marché de la cybersécurité représentait $167 milliards, en 2021 $217 et on estime qu’en 2026 il vaudra $345 milliards<br/><br/>En 2019, l'Amérique du nord étais la région dans laquelle l’industrie était la plus développée et L'Asie est la région qui a connu le plus grand développement du marché.<br/><br/>Cependant, cette industrie est moins développée dans les pays dit du sud.";
         
-        introindicator.innerHTML = "1/3";
+        introindicator.innerHTML = "1/2";
         intronb = 0;
     }else if (intronb === 2){
-        introtitle.innerHTML = "Problématique";
-        introtxt.innerHTML = "Ceci est un nouveau paragraphe super long <br/> yesxy ";
-        introindicator.innerHTML = "2/3";
+        introtitle.innerHTML = "Schéma";
+        introtxt.innerHTML = "<img src=\"pics/niveaudvpt1.jpg\" alt=\"Pic Stats \" class=\"prezpic\">";
+        introindicator.innerHTML = "2/2";
         intronb = 1;
     }
     
@@ -125,9 +137,8 @@ document.querySelector('.consynthbtn').addEventListener('click', function(){
 
 
 
-closemodal.addEventListener('click', closeModal);
 overlayinto.addEventListener('click', closeModal);
-introbon.addEventListener('click', openmodal);
+niveaudvpt.addEventListener('click', openmodal);
 conbtn.addEventListener('click', openmodalconditions);
 cclbtn.addEventListener('click', openmodalccl);
 
@@ -143,7 +154,6 @@ document.addEventListener('keydown', function(e){
 document.querySelector('.darkmode').addEventListener('click', function(){
     if(darkmode === 1){
         darkmode = 0;
-        console.log(darkmode);
         document.getElementById('body').style.backgroundColor='white';
         document.getElementById('body').style.color='black';
         document.getElementById('secondbg').style.backgroundColor='#f5f5f5';
@@ -153,18 +163,14 @@ document.querySelector('.darkmode').addEventListener('click', function(){
         document.getElementById('navtitle4').style.color='#262626';
         document.getElementById('navtitle5').style.color='#262626';
         document.getElementById('scrollbox').style.backgroundColor='#c9ffd0';
-
         document.getElementById('darkmodebtn').style.backgroundColor='#4b4b4b';
-        
+        document.getElementById('overlayinto').style.backgroundColor='#00000036';
         document.getElementById("dark_mode").innerHTML="🌙";
     }
     else if(darkmode === 0){
         darkmode = 1;
-        console.log(darkmode);
-        
         document.getElementById('body').style.backgroundColor='#1b1b1b';
         document.getElementById('body').style.color='white';
-        
         document.getElementById('secondbg').style.backgroundColor='#161616';
         document.getElementById('scrollbox').style.backgroundColor='#222222';
         document.getElementById('navtitle').style.color='#cccccc';
@@ -174,7 +180,7 @@ document.querySelector('.darkmode').addEventListener('click', function(){
         document.getElementById('navtitle5').style.color='#cccccc';
         document.getElementById("dark_mode").innerHTML="☀️";
         document.getElementById('darkmodebtn').style.backgroundColor='#fff8f8';
-        document.getElementById('').style.backgroundColor='#fff8f8';
+        document.getElementById('overlayinto').style.backgroundColor='#00000099';
     }
 })
 
