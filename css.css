@@ -335,7 +335,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 .scroll {
@@ -423,7 +423,7 @@ footer {
     border: 1.5px solid #00ef1486;
     border-radius: 200px;
     text-decoration: none;
-    display: inline-block;
+    display: none;
     padding: 5px 3px;
     transition: 0.3s;
     position: fixed;
