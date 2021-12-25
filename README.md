@@ -9,7 +9,7 @@
 🏁 Started - Fill the website content<br />
 🏁 Started - Make the website responsive<br />
 🏁 Started - Create the remainging modal windows for the other sections<br />
-⬛ Make the navbat responsive<br />
+⬛ Make the navbar responsive<br />
 ⬛ Create a nice logo<br />
 ⬛ Correct all language errors<br />
 ⬛ Fix the bug when the home scroll down button isn"t displayed<br />
