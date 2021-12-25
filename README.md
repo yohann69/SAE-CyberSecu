@@ -5,14 +5,13 @@
 
 
 ## 📜 To do:
-⏳  Half done -  Configure the fixed scroll button<br />
 🏁 Started - Fill the website content<br />
 🏁 Started - Make the website responsive<br />
 🏁 Started - Create the remainging modal windows for the other sections<br />
+⬛ Make the website easier to use<br />
 ⬛ Make the navbar responsive<br />
-⬛ Create a nice logo<br />
+⬛ Create a nicer logo<br />
 ⬛ Correct all language errors<br />
-⬛ Fix the bug when the home scroll down button isn"t displayed<br />
 ⬛ ...
 <br />
 
@@ -25,6 +24,8 @@
 ✅ Improve the title and paragraph design<br />
 ✅ Configure the buttons to change the text in the modal windows<br />
 ✅ Make the section text center left next to a fixed background<br />
+✅ Fix the bug when the home scroll down button isn"t displayed<br />
+✅ Abandonned - Configure the fixed scroll button<br />
 ✅ ...
 <br />
 
