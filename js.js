@@ -18,6 +18,11 @@ const cclbtn = document.querySelector('.cclbtn');
 const btnrnd = document.querySelector('.btn-rnd');
 const arrowscroll = document.querySelector('.arrowscroll');
 
+let darkmode = 1;
+
+
+
+
 let intronb = 0;
 let scrollbtn = 0;
 
@@ -135,7 +140,43 @@ document.addEventListener('keydown', function(e){
     }
 })
 
+document.querySelector('.darkmode').addEventListener('click', function(){
+    if(darkmode === 1){
+        darkmode = 0;
+        console.log(darkmode);
+        document.getElementById('body').style.backgroundColor='white';
+        document.getElementById('body').style.color='black';
+        document.getElementById('secondbg').style.backgroundColor='#f5f5f5';
+        document.getElementById('navtitle').style.color='#262626';
+        document.getElementById('navtitle2').style.color='#262626';
+        document.getElementById('navtitle3').style.color='#262626';
+        document.getElementById('navtitle4').style.color='#262626';
+        document.getElementById('navtitle5').style.color='#262626';
+        document.getElementById('scrollbox').style.backgroundColor='#c9ffd0';
 
+        document.getElementById('darkmodebtn').style.backgroundColor='#4b4b4b';
+        
+        document.getElementById("dark_mode").innerHTML="🌙";
+    }
+    else if(darkmode === 0){
+        darkmode = 1;
+        console.log(darkmode);
+        
+        document.getElementById('body').style.backgroundColor='#1b1b1b';
+        document.getElementById('body').style.color='white';
+        
+        document.getElementById('secondbg').style.backgroundColor='#161616';
+        document.getElementById('scrollbox').style.backgroundColor='#222222';
+        document.getElementById('navtitle').style.color='#cccccc';
+        document.getElementById('navtitle2').style.color='#cccccc';
+        document.getElementById('navtitle3').style.color='#cccccc';
+        document.getElementById('navtitle4').style.color='#cccccc';
+        document.getElementById('navtitle5').style.color='#cccccc';
+        document.getElementById("dark_mode").innerHTML="☀️";
+        document.getElementById('darkmodebtn').style.backgroundColor='#fff8f8';
+        document.getElementById('').style.backgroundColor='#fff8f8';
+    }
+})
 
 
 
