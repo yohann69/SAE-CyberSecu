@@ -169,7 +169,7 @@ document.querySelector('.darkmode').addEventListener('click', function(){
     }
     else if(darkmode === 0){
         darkmode = 1;
-        document.getElementById('body').style.backgroundColor='#1b1b1b';
+        document.getElementById('body').style.backgroundColor='#212121';
         document.getElementById('body').style.color='white';
         document.getElementById('secondbg').style.backgroundColor='#161616';
         document.getElementById('scrollbox').style.backgroundColor='#222222';

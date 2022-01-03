@@ -7,6 +7,10 @@ html {
     font-family: "Raleway", sans-serif;
     scroll-behavior: smooth;
 }
+
+p{
+    font-family: "Segoe UI Variable Text", "Seoge UI Variable Static Text";
+}
 .content {
     margin-left: 5%;
     margin-right: 5%;
@@ -37,7 +41,7 @@ html {
 
 
 body {
-    background-color: #1b1b1b;
+    background-color: #212121;
     color: white;
     margin: 0;
 }
@@ -102,13 +106,16 @@ table{
     width: 50%;
 }
 .btn {
-    border: 3px solid #00ef1486;
-    border-radius: 200px;
+    border: 1px solid hsla(0, 0%, 0%, 10%);
+    border-radius: 4.5px;
     text-decoration: none;
     display: inline-block;
     padding: 5px 15px;
-    transition: 0.3s;
+    transition: .3s;
     cursor: pointer;
+    color: black;
+    
+    background-color: hsl(102deg 99% 69%);
 }
 
 .btn:hover,
@@ -116,8 +123,7 @@ table{
     background-color: #00ef14;
     border: 1px solid #00ef14;
     color: #1b1b1b;
-
-    border: 3px solid #00ef1486;
+    transition: 100ms ease-in-out;
 }
 
 .hidden {
@@ -187,7 +193,9 @@ table{
     padding: 3rem;
     padding-left: 5rem;
     padding-right: 5rem;
-    border-radius: 20px;
+    border-radius: 10px;
+    
+    border: 1px solid hsla(0, 0%, 0%, 10%);
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
     z-index: 100;
   }
@@ -244,13 +252,13 @@ table{
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.068);
-    -webkit-backdrop-filter: blur(20px);
-    -moz-backdrop-filter: blur(20px);
-    -ms-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    background: #3b3b3b4d;
+    -webkit-backdrop-filter: blur(60px);
+    -moz-backdrop-filter: blur(60px);
+    -ms-backdrop-filter: blur(60px);
+    backdrop-filter: blur(60px);
     z-index: 9999;
-
+    border-bottom: 1px solid #00000033;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -470,7 +478,6 @@ footer {
     transform: translateX(-50%);
     z-index: 0;
     bottom: 5%;
-    
     -webkit-backdrop-filter: blur(10px);
     -moz-backdrop-filter: blur(10px);
     -ms-backdrop-filter: blur(10px);
