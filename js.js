@@ -1,6 +1,40 @@
 'use strict'
 
 
+document.querySelector('.darkmode').addEventListener('click', function(){
+    if(darkmode === 1){
+        darkmode = 0;
+        document.getElementById('body').style.backgroundColor='white';
+        document.getElementById('body').style.color='black';
+        document.getElementById('secondbg').style.backgroundColor='#f5f5f5';
+        document.getElementById('navtitle').style.color='#262626';
+        document.getElementById('navtitle2').style.color='#262626';
+        document.getElementById('navtitle3').style.color='#262626';
+        document.getElementById('navtitle4').style.color='#262626';
+        document.getElementById('navtitle5').style.color='#262626';
+        document.getElementById('scrollbox').style.backgroundColor='#c9ffd0';
+        document.getElementById('darkmodebtn').style.backgroundColor='#4b4b4b';
+        document.getElementById('overlayinto').style.backgroundColor='#00000036';
+        document.getElementById("dark_mode").innerHTML="🌙";
+    }
+    else if(darkmode === 0){
+        darkmode = 1;
+        document.getElementById('body').style.backgroundColor='#212121';
+        document.getElementById('body').style.color='white';
+        document.getElementById('secondbg').style.backgroundColor='#161616';
+        document.getElementById('scrollbox').style.backgroundColor='#222222';
+        document.getElementById('navtitle').style.color='#cccccc';
+        document.getElementById('navtitle2').style.color='#cccccc';
+        document.getElementById('navtitle3').style.color='#cccccc';
+        document.getElementById('navtitle4').style.color='#cccccc';
+        document.getElementById('navtitle5').style.color='#cccccc';
+        document.getElementById("dark_mode").innerHTML="☀️";
+        document.getElementById('darkmodebtn').style.backgroundColor='#fff8f8';
+        document.getElementById('overlayinto').style.backgroundColor='#00000099';
+    }
+})
+
+
 const niveaudvpt = document.querySelector('.niveaudvpt');
 const overlayinto = document.querySelector('.overlayinto');
 const modalintro = document.querySelector('.modalintro');
@@ -55,10 +89,6 @@ document.querySelector('.scroll').addEventListener('click', function(){
     arrowscroll.classList.remove('bi-arrow-up');
 })
 
-const openmodalconditions = function(){
-    overlayinto.classList.remove('hidden');
-    modalconditions.classList.remove('hidden');
-}
 const openmodalccl = function(){
     overlayinto.classList.remove('hidden');
     modalccl.classList.remove('hidden');
@@ -102,7 +132,16 @@ intronext.addEventListener('click', function(){
     }
 })
 
+document.querySelector('.govrole').addEventListener('click', function(){
+    overlayinto.classList.remove('hidden');
+    modalconditions.classList.remove('hidden');
+})
 
+
+document.querySelector('.caract').addEventListener('click', function(){
+    overlayinto.classList.remove('hidden');
+    modalstrat.classList.remove('hidden');
+})
 
 for(let i = 0; i < closemodal.length; i++){
     closemodal[i].addEventListener('click', closeModal)
@@ -150,40 +189,6 @@ document.addEventListener('keydown', function(e){
         closeModal();
     }
 })
-
-document.querySelector('.darkmode').addEventListener('click', function(){
-    if(darkmode === 1){
-        darkmode = 0;
-        document.getElementById('body').style.backgroundColor='white';
-        document.getElementById('body').style.color='black';
-        document.getElementById('secondbg').style.backgroundColor='#f5f5f5';
-        document.getElementById('navtitle').style.color='#262626';
-        document.getElementById('navtitle2').style.color='#262626';
-        document.getElementById('navtitle3').style.color='#262626';
-        document.getElementById('navtitle4').style.color='#262626';
-        document.getElementById('navtitle5').style.color='#262626';
-        document.getElementById('scrollbox').style.backgroundColor='#c9ffd0';
-        document.getElementById('darkmodebtn').style.backgroundColor='#4b4b4b';
-        document.getElementById('overlayinto').style.backgroundColor='#00000036';
-        document.getElementById("dark_mode").innerHTML="🌙";
-    }
-    else if(darkmode === 0){
-        darkmode = 1;
-        document.getElementById('body').style.backgroundColor='#212121';
-        document.getElementById('body').style.color='white';
-        document.getElementById('secondbg').style.backgroundColor='#161616';
-        document.getElementById('scrollbox').style.backgroundColor='#222222';
-        document.getElementById('navtitle').style.color='#cccccc';
-        document.getElementById('navtitle2').style.color='#cccccc';
-        document.getElementById('navtitle3').style.color='#cccccc';
-        document.getElementById('navtitle4').style.color='#cccccc';
-        document.getElementById('navtitle5').style.color='#cccccc';
-        document.getElementById("dark_mode").innerHTML="☀️";
-        document.getElementById('darkmodebtn').style.backgroundColor='#fff8f8';
-        document.getElementById('overlayinto').style.backgroundColor='#00000099';
-    }
-})
-
 
 
 
