@@ -89,6 +89,7 @@ document.querySelector('.scroll').addEventListener('click', function(){
     arrowscroll.classList.remove('bi-arrow-up');
 })
 
+
 const openmodalccl = function(){
     overlayinto.classList.remove('hidden');
     modalccl.classList.remove('hidden');
@@ -141,6 +142,13 @@ document.querySelector('.govrole').addEventListener('click', function(){
 document.querySelector('.caract').addEventListener('click', function(){
     overlayinto.classList.remove('hidden');
     modalstrat.classList.remove('hidden');
+})
+
+
+document.querySelector('.externpositive').addEventListener('click', function(){
+    overlayinto.classList.remove('hidden');
+    document.querySelector('.modalccl').classList.remove('hidden');
+
 })
 
 for(let i = 0; i < closemodal.length; i++){
