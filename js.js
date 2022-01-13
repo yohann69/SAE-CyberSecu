@@ -178,7 +178,6 @@ document.querySelector('.consynthbtn').addEventListener('click', function(){
 
 overlayinto.addEventListener('click', closeModal);
 niveaudvpt.addEventListener('click', openmodal);
-conbtn.addEventListener('click', openmodalconditions);
 cclbtn.addEventListener('click', openmodalccl);
 
 
